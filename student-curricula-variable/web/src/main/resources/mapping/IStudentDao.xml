@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	 PUBLIC "-//mybatis.org//DTDMapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.IStudentDao">
+
+	<select id="selectOnePeople" parameterType="com.example.demo.entity.People" resultType="com.example.demo.entity.People">
+		select * FROM people   where NAME =#{NAME}
+	</select>
+
+
+		
+		
+</mapper>
